@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.button {
+  border-radius: 5px;
+  background-color: #f88379;
+  moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  padding: 10px 40px;
+  color: white;
+  background-size: 20px 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.button::before {
+    content: '\2192';
+    position: absolute;
+    left: 10px;
+}
+
+.button::after {
+    content: '\2190';
+    position: absolute;
+    right: 10px;
+}
