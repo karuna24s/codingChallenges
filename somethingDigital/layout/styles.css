@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  left: 20px;
+}
+
+.right {
+  position: relative;
+  left: 500px;
+  z-index: 0;
+
+}
+
+@media only screen and (max-width: 400px) {
+  .right {
+    width: 100%,
+    left: 0px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .right {
+    width: 100%,
+    left: 0px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .right { left: 0px;}
+}
