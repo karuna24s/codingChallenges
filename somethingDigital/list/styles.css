@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.reasons {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-family: Devonshire;
+  z-index: 1;
+  background-color:rgba(255,255,0,0.5);
+}
+
+
+li {
+  font-size: 18px;
+  background: white;
+  text-align: center;
+}
+
+li:nth-child(odd) { background: blue; }
+
+li:first-child {
+  font-weight: bold;
+ }
+
+li:last-child {
+  display: none;
+}
+
+li:nth-child(3) {
+  position:absolute;
+  top:0;
+  right:0;
+  margin-left: 70%;
+}
+/* attepmted to work on this section where:
+Change the style so that the really long list item
+does not wrap and extends beyond the container
+but remains hidden..but getting close*/
+/*
+li:nth-child(5) {
+  white-space: nowrap;
+  overflow: hidden;
+}*/
