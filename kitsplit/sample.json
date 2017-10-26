@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Ken",
+      "catLover": true,
+      "dogLover": true,
+      "numPets": 4,
+      "petNames": ["Rover", "Mitchell", "Libby", "Sam"]
+    },
+    {
+      "id": 2,
+      "name": "Kris",
+      "catLover": true,
+      "dogLover": true,
+      "numPets": 2,
+      "petNames": ["Jimmy", "Sally", "Simba"]
+    },
+    {
+      "id": 3,
+      "name": "Lisbeth",
+      "catLover": true,
+      "dogLover": false,
+      "numPets": 5,
+      "petNames": ["Al", "Sonny", "Aaron", "JoJo", "Smokey"]
+    },
+    {
+      "id": 4,
+      "name": "Danny",
+      "catLover": true,
+      "dogLover": false,
+      "numPets": 2,
+      "petNames": ["Simba", "Pride", "Rover"]
+    }
+  ]
+}
