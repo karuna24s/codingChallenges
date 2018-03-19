@@ -7,6 +7,21 @@
   </head>
   <body>
     <div class="container">
+      <form action="/my-handling-form-page" method="post">
+        <h2>Print Center Options</h2>
+        <p>In order for the Print Center to serve you, please fill in the information below.</p>
+        <div class="delivery-options">
+          <label for="deliver">Deliver to:</label><br>
+          <input type="radio" name="delivery" value="owner"> Meeting Owner - Delivery will occur one business day prior to the meeting time.<br>
+          <input type="radio" name="delivery" value="room"> Meeting Room - Delivery will occur 15 minutes prior to the meeting time.<br>
+        </div>
+        <div class="special-instructions">
+          <p><textarea placeholder="If you have any special instructions pertinent to your entire order, please enter them here..."></textarea></p>
+        </div>
+        <div class="button">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
       <div class="form-area">
           <h3>List of documents</h3>
           <div class="loadDocuments"/></div>
