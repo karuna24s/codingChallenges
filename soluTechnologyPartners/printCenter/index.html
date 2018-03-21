@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="container">
-      <form action="/my-handling-form-page" method="post">
+      <form>
         <h2>Print Center Options</h2>
         <p>In order for the Print Center to serve you, please fill in the information below.</p>
         <div class="delivery-options">
@@ -18,14 +18,53 @@
         <div class="special-instructions">
           <p><textarea placeholder="If you have any special instructions pertinent to your entire order, please enter them here..."></textarea></p>
         </div>
-        <div class="button">
-          <button type="submit">Submit</button>
+        <table class="printForm">
+          <col style="width:40%">
+          <col style="width:10%">
+          <col style="width:10%">
+          <col style="width:40%">
+          <tr>
+            <th>File</th>
+            <th>Print</th>
+            <th>Color</th>
+            <th>Notes</th>
+          </tr>
+          <!-- <tr>
+            <td>Jill</td>
+            <td><input type="checkbox"/></td>
+            <td><input type="checkbox"/></td>
+            <td><input placeholder="Notes..."></text></td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td><input type="checkbox"/></td>
+            <td><input type="checkbox"/></td>
+            <td><input placeholder="Notes..."></text></td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td><input type="checkbox"/></td>
+            <td><input type="checkbox"/></td>
+            <td><input placeholder="Notes..."></text></td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td><input type="checkbox"/></td>
+            <td><input type="checkbox"/></td>
+            <td><input placeholder="Notes..."></text></td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td><input type="checkbox"/></td>
+            <td><input type="checkbox"/></td>
+            <td><input placeholder="Notes..."></text></td>
+          </tr> -->
+        </table>
+        <div class="buttons">
+          <button class="submit" type="submit">Submit</button>
+          <button class ="cancel" type="cancel">Cancel</button>
         </div>
       </form>
-      <div class="form-area">
-          <h3>List of documents</h3>
-          <div class="loadDocuments"/></div>
-      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="printfile.js"></script>
