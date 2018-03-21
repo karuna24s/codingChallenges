@@ -32,7 +32,7 @@ label {
 }
 
 textarea {
-  font: 1em helvetica;
+  font: .75em helvetica;
   width: 600px;
   /* To properly align multiline text fields with their labels */
   vertical-align: top;
@@ -63,4 +63,16 @@ th, td {
 }
 table tr:nth-child(odd) {
     background-color: #eee;
+}
+
+span {
+  font: .75em helvetica;
+  display:inline;
+}
+
+button {
+    float:right;
+    display:block;
+    margin-right:0px;
+    clear:left;
 }
