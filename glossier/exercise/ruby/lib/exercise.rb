@@ -47,15 +47,17 @@ module Exercise
   # users: [User]
   # returns: String
   def self.state_with_most_orders(locations:, orders:, users:)
-    require 'pry'
-    binding.pry
-    puts "#{orders}"
-    puts "#{orders.class}"
-    puts "#{locations}"
-    puts "#{locations.class}"
-    puts "#{users}"
-    puts "#{users.class}"
-    
+    location_hash = {}
+    orders.map do |order|
+      users.map do |user|
+        if order.user_id == user.id
+          location = user.location_id
+          location_hash[location] ? location_hash[location] += 1 : location_hash[location] = 1
+        end
+      end
+    end
+    highest_ordered_location = location_hash.key(location_hash.values.max)
+    locations.detect {|location| location.id == highest_ordered_location}.state
   end
 
   # Given a list of recommended products, generate a formatted message
@@ -68,5 +70,14 @@ module Exercise
   # products: [Product]
   # returns: String
   def self.format_offer(products)
+    if products.size == 1
+      "Goes well with #{products[0].name}"
+    elsif products.size == 2
+      "Goes well with #{products[0].name} and #{products[1].name}"
+    elsif products.size == 4
+      "Goes well with #{products[0].name}, #{products[1].name}, #{products[2].name}, and #{products[3].name}"
+    else products.size == 0
+      ""
+    end
   end
 end

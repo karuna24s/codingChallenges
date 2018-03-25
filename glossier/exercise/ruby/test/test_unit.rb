@@ -57,36 +57,36 @@ module Exercise
         )
       )
     end
-    
-  #   def test_005_format_offer_with_one_product
-  #     products = [Fixtures.milky_jelly_cleanser]
-  #     assert_equal "Goes well with Milky Jelly Cleanser", Exercise.format_offer(products)
-  #   end
-  #
-  #   def test_006_format_offer_with_two_products
-  #     products = [Fixtures.milky_jelly_cleanser, Fixtures.invisible_shield]
-  #     assert_equal(
-  #       "Goes well with Milky Jelly Cleanser and Invisible Shield",
-  #       Exercise.format_offer(products)
-  #     )
-  #   end
-  #
-  #   def test_007_format_offer_with_many_products
-  #     products = [
-  #       Fixtures.milky_jelly_cleanser,
-  #       Fixtures.invisible_shield,
-  #       Fixtures.haloscope,
-  #       Fixtures.glossier_you,
-  #     ]
-  #
-  #     assert_equal(
-  #       "Goes well with Milky Jelly Cleanser, Invisible Shield, Haloscope, and Glossier You",
-  #       Exercise.format_offer(products)
-  #     )
-  #   end
-  #
-  #   def test_008_format_offer_with_no_products
-  #     assert_equal("", Exercise.format_offer([]))
-  #   end
+
+    def test_005_format_offer_with_one_product
+      products = [Fixtures.milky_jelly_cleanser]
+      assert_equal "Goes well with Milky Jelly Cleanser", Exercise.format_offer(products)
+    end
+
+    def test_006_format_offer_with_two_products
+      products = [Fixtures.milky_jelly_cleanser, Fixtures.invisible_shield]
+      assert_equal(
+        "Goes well with Milky Jelly Cleanser and Invisible Shield",
+        Exercise.format_offer(products)
+      )
+    end
+
+    def test_007_format_offer_with_many_products
+      products = [
+        Fixtures.milky_jelly_cleanser,
+        Fixtures.invisible_shield,
+        Fixtures.haloscope,
+        Fixtures.glossier_you,
+      ]
+
+      assert_equal(
+        "Goes well with Milky Jelly Cleanser, Invisible Shield, Haloscope, and Glossier You",
+        Exercise.format_offer(products)
+      )
+    end
+
+    def test_008_format_offer_with_no_products
+      assert_equal("", Exercise.format_offer([]))
+    end
   end
 end
